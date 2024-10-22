@@ -4,7 +4,7 @@ A set of utility functions to programmatically edit JSON objects, including rena
 
 ## Features
 
-- **Rename Keys**: Change the name of existing keys while preserving their order.
+- **Rename Keys**: Change the name of existing keys while preserving their order (using the dot way: address.city insteadt of address["city"]).
 - **Update Values**: Modify the value associated with a key. All values are treated as strings.
 - **Add Key-Value Pairs**: Introduce new keys and assign string values.
 - **Delete Keys**: Remove existing keys from the JSON object.
@@ -13,9 +13,9 @@ A set of utility functions to programmatically edit JSON objects, including rena
 
 Install the package via npm:
 
-\`\`\`bash
+```bash
 npm install json-editor-functions
-\`\`\`
+```
 
 ## Usage
 
@@ -23,7 +23,7 @@ Import the functions into your project using CommonJS or ES6 modules.
 
 ### CommonJS
 
-\`\`\`javascript
+```javascript
 const {
   getNestedProperty,
   setNestedProperty,
@@ -59,11 +59,11 @@ addKeyValue(jsonObject, 'address', 'zipcode', '12345');
 deleteKey(jsonObject, 'hobbies');
 
 console.log(JSON.stringify(jsonObject, null, 2));
-\`\`\`
+```
 
 ### ES6 Modules
 
-\`\`\`javascript
+```javascript
 import {
   getNestedProperty,
   setNestedProperty,
@@ -75,19 +75,19 @@ import {
 } from 'json-editor-functions';
 
 // Similar usage as shown in the CommonJS example
-\`\`\`
+```
 
 ## API Reference
 
 Detailed description of each function including parameters, return values, and examples.
 
-### \`getNestedProperty(obj, path)\`
+### `getNestedProperty(obj, path)`
 - Description: Retrieves the value at a specified dot-notation path within a JSON object.
-- Example: \`getNestedProperty(jsonObject, 'address.street') // Returns '123 Main St'\`
+- Example: `getNestedProperty(jsonObject, 'address.street') // Returns '123 Main St'`
 
-### \`setNestedProperty(obj, path, value)\`
+### `setNestedProperty(obj, path, value)`
 - Description: Sets a value at a specified dot-notation path within a JSON object.
-- Example: \`setNestedProperty(jsonObject, 'address.city', 'Newtown')\`
+- Example: `setNestedProperty(jsonObject, 'address.city', 'Newtown')`
 
 ### Additional function descriptions...
 
@@ -109,4 +109,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Contact
 
-For any questions or suggestions, please contact [your-email@example.com](mailto:your-email@example.com).
+For any questions or suggestions, please contact [sinsintro@gmail.com](mailto:sinsintro@gmail.com).
