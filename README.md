@@ -77,32 +77,6 @@ import {
 // Similar usage as shown in the CommonJS example
 ```
 
-## API Reference
-
-Detailed description of each function including parameters, return values, and examples.
-
-### `getNestedProperty(obj, path)`
-- Description: Retrieves the value at a specified dot-notation path within a JSON object.
-- Example: `getNestedProperty(jsonObject, 'address.street') // Returns '123 Main St'`
-
-### `setNestedProperty(obj, path, value)`
-- Description: Sets a value at a specified dot-notation path within a JSON object.
-- Example: `setNestedProperty(jsonObject, 'address.city', 'Newtown')`
-
-### Additional function descriptions...
-
-## Error Handling
-
-Detailed error handling strategies for the functions, explaining common errors and their resolutions.
-
-## Examples
-
-Multiple examples showcasing different use cases and functionalities.
-
-## Contributing
-
-Instructions on how to contribute to the package development.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
