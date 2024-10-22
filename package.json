@@ -1,6 +1,6 @@
 {
   "name": "sinsintro-json-editor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A set of utility functions to edit JSON objects, including renaming keys and updating values.",
   "main": "index.js",
   "scripts": {
